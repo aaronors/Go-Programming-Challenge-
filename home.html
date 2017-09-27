@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Hello!</title>
+  </head>
+  <body>
+  <form action="/save/" method="POST">
+    Enter an item:<br>
+    <input type="text" name=input>
+    <input type="submit" value="Submit">
+  </form>
+  {{range $a := .ItemName}}
+      {{$a}}<br>
+  {{end}}
+  </body>
+</html>
+
+
